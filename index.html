@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея КОРД</title>
+    <style>
+        /* Основні стилі */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ececec;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #0052cc;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Секція галереї */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(135deg, #2980b9, #8e44ad);
+            color: white;
+            text-align: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Зміни при наведенні */
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Стилі заголовків */
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .gallery-item:nth-child(odd) {
+            background: linear-gradient(135deg, #e74c3c, #f39c12);
+        }
+
+        .gallery-item:nth-child(even) {
+            background: linear-gradient(135deg, #2ecc71, #16a085);
+        }
+
+        /* Анімації для фону */
+        .gallery-item:nth-child(1):hover {
+            background: linear-gradient(135deg, #1abc9c, #3498db);
+        }
+
+        .gallery-item:nth-child(2):hover {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+        }
+
+        .gallery-item:nth-child(3):hover {
+            background: linear-gradient(135deg, #f39c12, #e74c3c);
+        }
+
+        .gallery-item:nth-child(4):hover {
+            background: linear-gradient(135deg, #2980b9, #34495e);
+        }
+
+        /* Адаптивність для мобільних пристроїв */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>☠️Галерея роботи КОРД☠️</h1>
+    </header>
+     <nav>
+        <a href="#history">Історія</a>
+        <a href="#tasks">Завдання</a>
+        <a href="#equipment">Обладнання</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+         <img src="https://kanaldim.tv/wp-content/uploads/2021/09/05-820x473.jpg"width="266"height="300">   
+        </div>
+        <div class="gallery-item">
+        <img src="https://apostrophe.ua/uploads/image/5637be8189c29fbb217f2e56b784d880.jpg"width="266"height="300">
+        </div>
+        <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNAy1FkZmB-kzw3Ij8qQrcFtVeUS9-RcSjA&s"
+        width="266"height="300">
+        </div>
+        <div class="gallery-item">
+         <img src="https://mil.in.ua/wp-content/uploads/2020/11/Ob124razets-oblo124zhky-2-8.png"
+          width="266"height="300">  
+        </div>
+        <div class="gallery-item">
+           <img src="https://news.bigmir.net/i/46/81/00/1/4681001/647e95b0c7511248ad771870ba9a4167-quality_75Xresize_crop_1Xallow_enlarge_0Xw_740Xh_400.jpg" 
+          width="266"height="300">
+        </div>
+        <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0GYxyuXfE38HkhnRePpfr1WpOHm2gulcDyg&s"
+          width="266"height="300">
+        </div>
+        <!-- Додати більше фото за потреби -->
+    </div>
+<footer>
+        <p>&copy; 2024 Підрозділ КОРД України</p>
+    </footer>
+</body>
+</html>
